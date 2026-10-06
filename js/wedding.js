@@ -3,16 +3,16 @@
    Until that address is pasted below, replies stay in this browser.
    adminPasscode, ADMIN_PASSCODE in server.py, and PASSCODE in sheets/Code.gs stay the same. */
 const WEDDING = {
-  brand: "Steeve & Isabelle",
+  brand: "Steeve & Name",
   mark: "SI",
   monogram: "S & I",
   personOne: "Steeve",
   personOneKin: "Son of Mr. & Mrs. —",
-  personTwo: "Isabelle",
+  personTwo: "Name",
   personTwoKin: "Daughter of Mr. & Mrs. —",
   coupleKicker: "The Families",
   description:
-    "You are invited to the wedding of Steeve and Isabelle on Saturday, 12 December 2026 at Rosewood Gardens.",
+    "You are invited to the wedding of Steeve and Name on Saturday, 12 December 2026 at Rosewood Gardens.",
   invitationKicker: "Formal Invitation",
   invitationLead: "Together with their families,",
   invitationClose: "request the honour of your presence to celebrate their marriage",

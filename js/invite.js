@@ -88,7 +88,7 @@ function bindCalendar() {
     const lines = [
       "BEGIN:VCALENDAR",
       "VERSION:2.0",
-      "PRODID:-//Steeve and Isabelle//Wedding//EN",
+      "PRODID:-//Steeve and Name//Wedding//EN",
       "BEGIN:VEVENT",
       "UID:wedding-" + WEDDING.dateISO.replace(/[^\d]/g, "") + "@invitation",
       "DTSTAMP:" + stamp,
