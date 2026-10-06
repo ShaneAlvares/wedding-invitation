@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Steeve &amp; Isabelle — RSVP</title>
+    <meta name="description" content="Reply to the wedding of Steeve and Isabelle." />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#fef8f4" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="rsvp">
+    <div class="desk">
+      <div class="shell">
+        <header class="topbar">
+          <a class="brand" href="index.html">
+            <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+              <path d="M32 8c8 6 16 10 16 22 0 10-6 20-16 26C22 50 16 40 16 30 16 18 24 14 32 8z" fill="none" stroke="#485443" stroke-width="1.4"/>
+              <path d="M32 14c6 5 12 8 12 16 0 8-5 15-12 20-7-5-12-12-12-20 0-8 6-11 12-16z" fill="none" stroke="#c5a059" stroke-width="1"/>
+            </svg>
+            <span class="brand-copy">
+              <span class="brand-kicker" data-field="brand">Steeve &amp; Isabelle</span>
+              <span class="brand-title">RSVP</span>
+            </span>
+          </a>
+          <div class="top-actions">
+            <button class="icon-btn" id="notice-btn" type="button" aria-label="Reply reminder" aria-expanded="false">
+              <span class="material-symbols-outlined">notifications</span>
+            </button>
+            <div class="monogram-badge" data-field="mark">SI</div>
+          </div>
+          <p class="notice" id="notice" hidden data-field="notice">Kindly send your reply by November 15, 2026.</p>
+        </header>
+
+        <main class="main" id="main" tabindex="-1">
+          <form class="stack" id="rsvp-form" novalidate>
+            <div id="rsvp-flow" class="stack" style="padding:0">
+              <div>
+                <div class="progress-row">
+                  <span>Your reply</span>
+                  <strong id="progress-label">Guest attendance</strong>
+                </div>
+                <div class="track" aria-hidden="true"><div class="track-fill" id="progress-fill"></div></div>
+              </div>
+
+              <section class="honor">
+                <div class="honor-kicker">
+                  <span class="material-symbols-outlined">favorite</span>
+                  <span data-field="honorKicker">The Honor of Your Presence</span>
+                </div>
+                <h2>Dear guest</h2>
+                <p class="body" data-field="honorPoem">In the glasshouse at Rosewood Gardens, we will say our vows. Your presence is the truest gift to our marriage.</p>
+              </section>
+
+              <label class="field">
+                <span class="field-label" for="guest-name">Your full name</span>
+                <input class="input" id="guest-name" name="name" autocomplete="name" placeholder="As you would like it written" required />
+              </label>
+
+              <div class="field">
+                <span class="field-label">Response confirmation</span>
+                <div class="choices" role="group" aria-label="Response confirmation">
+                  <button class="choice" id="accept" type="button" aria-pressed="true">
+                    <span class="choice-icon"><span class="material-symbols-outlined">check</span></span>
+                    <strong>Joyfully Accept</strong>
+                    <em>We will save your seat</em>
+                  </button>
+                  <button class="choice is-decline" id="decline" type="button" aria-pressed="false">
+                    <span class="choice-icon"><span class="material-symbols-outlined">close</span></span>
+                    <strong>Regretfully Decline</strong>
+                    <em>With warm wishes</em>
+                  </button>
+                </div>
+              </div>
+
+              <label class="field">
+                <span class="field-label" for="note">Note for the couple, optional</span>
+                <textarea class="textarea" id="note" name="note" rows="3" placeholder="A wish, a blessing, or anything we should know"></textarea>
+              </label>
+
+              <p class="form-error" id="form-error" role="alert" hidden></p>
+
+              <div>
+                <button class="btn btn-primary" id="submit-rsvp" type="submit">
+                  <span class="material-symbols-outlined">verified</span>
+                  <span>Confirm &amp; Send RSVP</span>
+                </button>
+                <p class="lock-note"><span class="material-symbols-outlined">lock</span> A seal is set when you send this</p>
+              </div>
+            </div>
+
+            <div class="success" id="rsvp-success" hidden>
+              <div class="wax wax-static" aria-hidden="true"><span data-field="monogram">S &amp; I</span></div>
+              <h2 id="success-title">Your place is sealed</h2>
+              <p id="success-copy"></p>
+              <p id="success-local" hidden>This copy is saved only in this browser. Open the host’s website link if you were given one, and send the reply there too.</p>
+              <div class="actions">
+                <button class="btn btn-quiet" id="edit-reply" type="button">Edit this reply</button>
+                <a class="btn btn-primary" href="index.html">Return to the invitation</a>
+              </div>
+            </div>
+          </form>
+        </main>
+
+        <nav class="tabbar" aria-label="Invitation">
+          <a href="index.html"><span class="material-symbols-outlined">mark_email_read</span>Invite</a>
+          <a href="rsvp.html" aria-current="page"><span class="material-symbols-outlined">drafts</span>RSVP</a>
+          <a href="admin.html"><span class="material-symbols-outlined">menu_book</span>Registry</a>
+        </nav>
+      </div>
+    </div>
+    <script src="js/wedding.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/rsvp.js"></script>
+  </body>
+</html>

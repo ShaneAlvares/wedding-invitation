@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Steeve and Isabelle//Wedding Invitation//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTART:20261212T160000
+DTEND:20261212T233000
+SUMMARY:Steeve & Isabelle — Wedding
+LOCATION:Rosewood Gardens\, The Conservatory
+DESCRIPTION:Ceremony at 4:00 PM in the Conservatory\, garden drinks\, then dinner and dancing in the Orangery.
+END:VEVENT
+END:VCALENDAR

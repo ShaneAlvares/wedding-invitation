@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#1c2823" />
+    <meta name="robots" content="noindex" />
+    <meta
+      name="description"
+      content="You are invited to the wedding of Steeve and Isabelle on Saturday, 12 December 2026 at Rosewood Gardens."
+    />
+    <title>Steeve &amp; Isabelle | Wedding — December 12, 2026</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>document.documentElement.classList.add("js");</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to invitation</a>
+
+    <div class="preloader" id="preloader">
+      <div class="preloader-inner">
+        <svg class="preloader-rings" viewBox="0 0 130 78" fill="none" aria-hidden="true">
+          <circle class="ring ring-1" cx="48" cy="39" r="27"></circle>
+          <circle class="ring ring-2" cx="82" cy="39" r="27"></circle>
+        </svg>
+        <p class="preloader-names">Steeve &amp; Isabelle</p>
+        <p class="preloader-date">12 . 12 . 2026</p>
+      </div>
+    </div>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="petals-container" id="petals" aria-hidden="true"></div>
+
+    <nav class="navbar" id="navbar">
+      <a class="nav-logo" href="#home">S &amp; I</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#couple">Our Story</a></li>
+        <li><a href="#details">Details</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero" id="home">
+      <div class="hero-photo" aria-hidden="true">
+        <img src="assets/hero.svg" alt="" fetchpriority="high" decoding="async" />
+      </div>
+      <div class="hero-aurora" aria-hidden="true">
+        <span class="aurora-blob aurora-1"></span>
+        <span class="aurora-blob aurora-2"></span>
+        <span class="aurora-blob aurora-3"></span>
+      </div>
+      <div class="hero-sparkles" id="heroSparkles" aria-hidden="true"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-ornament" aria-hidden="true">✦</div>
+        <p class="hero-subtitle">We're Getting Married</p>
+        <h1 class="hero-names">
+          <span class="groom-name">Steeve</span>
+          <span class="ampersand">&amp;</span>
+          <span class="bride-name">Isabelle</span>
+        </h1>
+        <div class="hero-date-line">
+          <span class="line"></span>
+          <span class="date-text">December 12, 2026</span>
+          <span class="line"></span>
+        </div>
+        <p class="hero-venue">Rosewood Gardens</p>
+        <div class="countdown" id="countdown" data-start="2026-12-12T16:00:00" data-end="2026-12-12T23:30:00"></div>
+        <a href="#couple" class="scroll-down">
+          <span>Scroll Down</span>
+          <span class="scroll-mouse" aria-hidden="true"><span class="scroll-wheel"></span></span>
+        </a>
+      </div>
+    </header>
+
+    <section class="section couple-section" id="couple">
+      <div class="section-header" data-animate>
+        <span class="section-ornament" aria-hidden="true">❧</span>
+        <h2 class="section-title">The Happy Couple</h2>
+        <p class="section-subtitle">Together with their families</p>
+      </div>
+
+      <div class="couple-container">
+        <article class="couple-card" data-animate>
+          <div class="couple-monogram" aria-hidden="true">S</div>
+          <p class="couple-role">The groom</p>
+          <h3 class="couple-name">Steeve</h3>
+          <p class="couple-note">Together with his family</p>
+        </article>
+
+        <div class="couple-heart" data-animate>
+          <div class="heart-icon" aria-hidden="true">
+            <svg viewBox="0 0 100 100" class="heart-svg">
+              <path d="M50,88 C25,65 5,50 5,30 C5,15 15,5 30,5 C40,5 48,12 50,20 C52,12 60,5 70,5 C85,5 95,15 95,30 C95,50 75,65 50,88Z" fill="currentColor"></path>
+            </svg>
+          </div>
+          <p class="couple-date">12 . 12 . 2026</p>
+        </div>
+
+        <article class="couple-card" data-animate>
+          <div class="couple-monogram" aria-hidden="true">I</div>
+          <p class="couple-role">The bride</p>
+          <h3 class="couple-name">Isabelle</h3>
+          <p class="couple-note">Together with her family</p>
+        </article>
+      </div>
+
+      <blockquote class="honor" data-animate>
+        <p>In the glasshouse at Rosewood Gardens, we will say our vows. Your presence is the truest gift to our marriage.</p>
+      </blockquote>
+    </section>
+
+    <section class="section story-section" id="details">
+      <div class="section-header" data-animate>
+        <span class="section-ornament" aria-hidden="true">❧</span>
+        <h2 class="section-title">Wedding Details</h2>
+        <p class="section-subtitle">Everything you need to know</p>
+      </div>
+
+      <div class="details-container">
+        <article class="detail-card" data-animate>
+          <div class="detail-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3.5" y="5" width="17" height="16" rx="2.5"></rect>
+              <line x1="3.5" y1="9.5" x2="20.5" y2="9.5"></line>
+              <line x1="7.5" y1="3" x2="7.5" y2="6.5"></line>
+              <line x1="16.5" y1="3" x2="16.5" y2="6.5"></line>
+              <circle cx="12" cy="14.5" r="1.4" fill="currentColor" stroke="none"></circle>
+            </svg>
+          </div>
+          <h3>Date</h3>
+          <p class="detail-main">December 12, 2026</p>
+          <p class="detail-sub">Saturday · Ceremony at 4:00 PM</p>
+          <a href="wedding.ics" class="calendar-btn" download>Add to Calendar</a>
+        </article>
+
+        <article class="detail-card" data-animate>
+          <div class="detail-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"></path>
+              <circle cx="12" cy="9.5" r="2.4"></circle>
+            </svg>
+          </div>
+          <h3>Venue</h3>
+          <a
+            class="venue-link"
+            href="https://www.google.com/maps/search/?api=1&amp;query=Rosewood%20Gardens"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p class="detail-main">Rosewood Gardens</p>
+            <p class="detail-sub">The Conservatory &amp; The Orangery</p>
+          </a>
+        </article>
+
+        <article class="detail-card" data-animate>
+          <div class="detail-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 8.5 12 4l6 4.5"></path>
+              <path d="M7 8.5 V19h10V8.5"></path>
+              <path d="M10 19v-5h4v5"></path>
+            </svg>
+          </div>
+          <h3>Attire</h3>
+          <p class="detail-main">Black Tie Optional</p>
+          <p class="detail-sub">Olive, cream, gold, and soft taupe among the roses.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="timeline">
+      <div class="section-header" data-animate>
+        <span class="section-ornament" aria-hidden="true">❧</span>
+        <h2 class="section-title">Wedding Day Timeline</h2>
+        <p class="section-subtitle">A December evening to remember</p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item" data-animate>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-time">4:00 PM</span>
+            <h3>Ceremony</h3>
+            <p>Vows in the Conservatory as the afternoon light settles on the glass.</p>
+          </div>
+        </article>
+        <article class="timeline-item" data-animate>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-time">5:15 PM</span>
+            <h3>Garden Drinks</h3>
+            <p>A pause among the roses before we go in to dinner.</p>
+          </div>
+        </article>
+        <article class="timeline-item" data-animate>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-time">6:30 PM</span>
+            <h3>Dinner &amp; Dancing</h3>
+            <p>Supper, toasts, and the first dance in the Orangery.</p>
+          </div>
+        </article>
+        <div class="timeline-progress" id="timelineProgress"></div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="section-header" data-animate>
+        <span class="section-ornament" aria-hidden="true">❧</span>
+        <h2 class="section-title">The Setting</h2>
+        <p class="section-subtitle">Rosewood Gardens, the evening of the wedding</p>
+      </div>
+
+      <div class="gallery-grid">
+        <button class="gallery-item gi-1" type="button" data-animate>
+          <figure class="gallery-photo">
+            <img src="assets/conservatory.svg" alt="A glass conservatory in a rose garden at dusk" />
+            <figcaption>
+              <span class="caption-line"></span>
+              <p>The Conservatory</p>
+            </figcaption>
+          </figure>
+        </button>
+        <button class="gallery-item gi-2" type="button" data-animate>
+          <figure class="gallery-photo">
+            <img src="assets/roses.svg" alt="Blush roses against a warm evening sky" />
+            <figcaption>
+              <span class="caption-line"></span>
+              <p>Among the Roses</p>
+            </figcaption>
+          </figure>
+        </button>
+        <button class="gallery-item gi-3" type="button" data-animate>
+          <figure class="gallery-photo">
+            <img src="assets/path.svg" alt="A pale garden path between olive trees" />
+            <figcaption>
+              <span class="caption-line"></span>
+              <p>Garden Light</p>
+            </figcaption>
+          </figure>
+        </button>
+        <button class="gallery-item gi-4" type="button" data-animate>
+          <figure class="gallery-photo">
+            <img src="assets/table.svg" alt="A candlelit table in the orangery" />
+            <figcaption>
+              <span class="caption-line"></span>
+              <p>The Orangery</p>
+            </figcaption>
+          </figure>
+        </button>
+        <button class="gallery-item gi-5" type="button" data-animate>
+          <figure class="gallery-photo">
+            <img src="assets/rings.svg" alt="Two gold rings on linen" />
+            <figcaption>
+              <span class="caption-line"></span>
+              <p>A Quiet Promise</p>
+            </figcaption>
+          </figure>
+        </button>
+        <button class="gallery-item gi-6" type="button" data-animate>
+          <figure class="gallery-photo">
+            <img src="assets/evening.svg" alt="December evening over the garden hills" />
+            <figcaption>
+              <span class="caption-line"></span>
+              <p>December Evening</p>
+            </figcaption>
+          </figure>
+        </button>
+      </div>
+      <p class="gallery-note">Illustrated glimpses of the grounds. Photographs will follow the day.</p>
+    </section>
+
+    <section class="section rsvp-section" id="rsvp">
+      <div class="section-header" data-animate>
+        <span class="section-ornament light" aria-hidden="true">❧</span>
+        <h2 class="section-title light">RSVP</h2>
+        <p class="section-subtitle light">We would be honoured by your presence</p>
+      </div>
+
+      <div class="rsvp-container">
+        <div class="rsvp-card" data-animate>
+          <p class="rsvp-message">
+            Please let us know if you will join us. Your presence would mean the world to us.
+          </p>
+          <p class="rsvp-deadline">
+            Kindly reply on or before <strong>November 15, 2026</strong>, so we can plan the tables and the menu.
+          </p>
+
+          <form class="rsvp-form" id="rsvpForm">
+            <div class="form-group">
+              <label for="guestName">Your full name</label>
+              <input type="text" id="guestName" name="name" autocomplete="name" required maxlength="80" />
+            </div>
+            <div class="form-group">
+              <label for="attending">Will you attend?</label>
+              <select id="attending" name="attending" required>
+                <option value="" selected disabled>Choose a reply</option>
+                <option value="yes">Joyfully accept</option>
+                <option value="no">Regretfully decline</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message <span class="optional">(optional)</span></label>
+              <textarea id="message" name="message" rows="3" maxlength="500"></textarea>
+            </div>
+            <button type="submit" class="rsvp-submit">
+              <span>Send RSVP</span>
+            </button>
+          </form>
+          <p class="rsvp-note">Replies are kept for the hosts.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-hearts" id="footerHearts" aria-hidden="true"></div>
+      <div class="footer-content" data-animate>
+        <div class="footer-ornament" aria-hidden="true">❦</div>
+        <h2 class="footer-names">Steeve &amp; Isabelle</h2>
+        <p class="footer-date">December 12, 2026 — Rosewood Gardens</p>
+        <p class="footer-message">"Two souls with a single thought, two hearts that beat as one."</p>
+        <div class="footer-ornament" aria-hidden="true">❦</div>
+        <p class="footer-copyright">Made with love for our special day</p>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+      <span aria-hidden="true">↑</span>
+    </button>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Illustration viewer" hidden>
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close">×</button>
+      <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous illustration">❮</button>
+      <figure class="lightbox-figure">
+        <img id="lightboxImage" alt="" />
+        <figcaption id="lightboxCaption"></figcaption>
+        <p class="lightbox-counter" id="lightboxCounter"></p>
+      </figure>
+      <button class="lightbox-arrow lightbox-next" id="lightboxNext" type="button" aria-label="Next illustration">❯</button>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

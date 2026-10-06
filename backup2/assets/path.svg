@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="A pale garden path between olive trees">
+  <rect width="800" height="1000" fill="#efe4d4"/>
+  <rect width="800" height="1000" fill="#d9c3a4" opacity="0.35"/>
+  <path d="M0 0 H800 V420 C620 480 520 560 400 620 C260 690 180 820 0 1000 Z" fill="#c5cbb8"/>
+  <path d="M800 0 V1000 C620 860 560 700 470 620 C360 520 300 420 800 300 Z" fill="#8e9a84"/>
+  <path d="M340 1000 C390 780 360 640 400 500 C440 360 410 180 430 40" fill="none" stroke="#f7f1e6" stroke-width="70" stroke-linecap="round"/>
+  <g fill="#3f4a3a">
+    <path d="M120 430 L190 140 L260 430 Z"/>
+    <path d="M80 520 L140 250 L200 520 Z"/>
+    <path d="M560 480 L640 160 L720 480 Z"/>
+  </g>
+  <g fill="#c4787a">
+    <circle cx="150" cy="470" r="7"/>
+    <circle cx="188" cy="500" r="5"/>
+    <circle cx="600" cy="520" r="6"/>
+    <circle cx="650" cy="548" r="5"/>
+  </g>
+  <circle cx="560" cy="120" r="36" fill="#f3ddb0"/>
+</svg>

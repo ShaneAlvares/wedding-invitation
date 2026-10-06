@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Blush roses against a warm evening sky">
+  <defs>
+    <linearGradient id="rose-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6e7d4"/>
+      <stop offset="1" stop-color="#e7c8b0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#rose-sky)"/>
+  <circle cx="620" cy="160" r="70" fill="#f3ddb0" opacity="0.7"/>
+  <g fill="none" stroke="#6d7a64" stroke-width="3">
+    <path d="M180 1000 C200 760 140 640 220 480"/>
+    <path d="M420 1000 C390 700 470 560 400 360"/>
+    <path d="M620 1000 C650 780 580 640 640 500"/>
+  </g>
+  <g fill="#4e5c48">
+    <ellipse cx="250" cy="620" rx="54" ry="22" transform="rotate(-30 250 620)"/>
+    <ellipse cx="300" cy="700" rx="48" ry="18" transform="rotate(20 300 700)"/>
+    <ellipse cx="470" cy="520" rx="50" ry="18" transform="rotate(-18 470 520)"/>
+    <ellipse cx="560" cy="680" rx="46" ry="16" transform="rotate(28 560 680)"/>
+  </g>
+  <g>
+    <circle cx="210" cy="450" r="46" fill="#a85d62"/>
+    <circle cx="188" cy="438" r="22" fill="#c4787a"/>
+    <circle cx="230" cy="454" r="18" fill="#e7b4b0"/>
+    <circle cx="400" cy="340" r="58" fill="#8e4d52"/>
+    <circle cx="372" cy="326" r="26" fill="#c4787a"/>
+    <circle cx="424" cy="348" r="22" fill="#f0c9c4"/>
+    <circle cx="640" cy="470" r="40" fill="#b86468"/>
+    <circle cx="622" cy="458" r="18" fill="#e7b4b0"/>
+  </g>
+  <path d="M0 860 C160 800 240 900 400 840 C560 780 640 900 800 820 L800 1000 L0 1000 Z" fill="#485443" opacity="0.35"/>
+</svg>

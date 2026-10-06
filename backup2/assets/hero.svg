@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -180 1600 1000" role="img" aria-label="Dusk over a glass conservatory in a rose garden">
+  <defs>
+    <linearGradient id="hero-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a2824"/>
+      <stop offset="0.42" stop-color="#3e5348"/>
+      <stop offset="0.72" stop-color="#c6a36a"/>
+      <stop offset="1" stop-color="#f0d7b4"/>
+    </linearGradient>
+    <linearGradient id="hero-glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f1e4"/>
+      <stop offset="1" stop-color="#d5e3d2"/>
+    </linearGradient>
+    <linearGradient id="hero-hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6d7d68"/>
+      <stop offset="1" stop-color="#2f3d34"/>
+    </linearGradient>
+  </defs>
+  <rect y="-180" width="1600" height="1180" fill="url(#hero-sky)"/>
+  <circle cx="1180" cy="210" r="90" fill="#f3ddb0" opacity="0.28"/>
+  <circle cx="1180" cy="210" r="46" fill="#f6e6c4" opacity="0.85"/>
+  <g fill="#f8f1e4" opacity="0.55">
+    <circle cx="240" cy="160" r="1.4"/>
+    <circle cx="420" cy="90" r="1.1"/>
+    <circle cx="680" cy="140" r="1.3"/>
+    <circle cx="860" cy="70" r="1"/>
+    <circle cx="980" cy="180" r="1.2"/>
+    <circle cx="1400" cy="120" r="1.2"/>
+  </g>
+  <path d="M0 690 C220 600 380 640 620 580 C900 510 1100 600 1600 520 L1600 1000 L0 1000 Z" fill="#b7c2ac"/>
+  <path d="M0 780 C260 700 480 760 760 710 C1080 650 1280 740 1600 690 L1600 1000 L0 1000 Z" fill="url(#hero-hill)"/>
+  <g fill="#243128">
+    <path d="M180 790 L230 520 L280 790 Z"/>
+    <path d="M250 820 L292 580 L334 820 Z"/>
+    <path d="M1280 760 L1336 500 L1392 760 Z"/>
+    <path d="M1360 800 L1404 560 L1448 800 Z"/>
+  </g>
+  <g transform="translate(560 430)">
+    <path d="M40 250 H420 V150 H40 Z" fill="#f4efe6" stroke="#243128" stroke-width="3"/>
+    <path d="M16 150 H444 L230 18 Z" fill="url(#hero-glass)" stroke="#243128" stroke-width="3"/>
+    <path d="M230 18 V250" stroke="#c9a96e" stroke-width="2"/>
+    <path d="M80 150 L130 62" stroke="#c9a96e" stroke-width="2"/>
+    <path d="M380 150 L330 62" stroke="#c9a96e" stroke-width="2"/>
+    <rect x="78" y="168" width="78" height="82" fill="#e7f0e4" stroke="#243128" stroke-width="2"/>
+    <rect x="304" y="168" width="78" height="82" fill="#e7f0e4" stroke="#243128" stroke-width="2"/>
+    <path d="M196 250 V174 Q230 152 264 174 V250 Z" fill="#6d5340" stroke="#243128" stroke-width="2"/>
+    <circle cx="250" cy="214" r="3" fill="#e6c98a"/>
+    <rect x="12" y="246" width="436" height="12" fill="#d9cfc2"/>
+    <rect x="150" y="188" width="28" height="36" fill="#f6e7b8" opacity="0.85"/>
+    <rect x="286" y="198" width="22" height="28" fill="#f6e7b8" opacity="0.7"/>
+  </g>
+  <g fill="#3d4c40">
+    <ellipse cx="260" cy="900" rx="120" ry="36"/>
+    <ellipse cx="460" cy="930" rx="90" ry="28"/>
+    <ellipse cx="1180" cy="910" rx="130" ry="34"/>
+    <ellipse cx="980" cy="950" rx="80" ry="24"/>
+  </g>
+  <g fill="#c4787a">
+    <circle cx="210" cy="860" r="9"/>
+    <circle cx="248" cy="878" r="6"/>
+    <circle cx="190" cy="888" r="5"/>
+    <circle cx="1120" cy="870" r="8"/>
+    <circle cx="1164" cy="888" r="6"/>
+    <circle cx="1088" cy="894" r="5"/>
+  </g>
+  <g fill="#e7b4b0">
+    <circle cx="228" cy="852" r="5"/>
+    <circle cx="1142" cy="862" r="5"/>
+  </g>
+</svg>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Steeve &amp; Isabelle — Registry</title>
+    <meta name="description" content="Host registry for confirmed guests and those unable to attend." />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#fef8f4" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="admin">
+    <div class="desk">
+      <div class="shell shell-wide">
+        <header class="topbar">
+          <a class="brand" href="index.html">
+            <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+              <path d="M32 8c8 6 16 10 16 22 0 10-6 20-16 26C22 50 16 40 16 30 16 18 24 14 32 8z" fill="none" stroke="#485443" stroke-width="1.4"/>
+              <path d="M32 14c6 5 12 8 12 16 0 8-5 15-12 20-7-5-12-12-12-20 0-8 6-11 12-16z" fill="none" stroke="#c5a059" stroke-width="1"/>
+            </svg>
+            <span class="brand-copy">
+              <span class="brand-kicker" data-field="brand">Steeve &amp; Isabelle</span>
+              <span class="brand-title">Registry</span>
+            </span>
+          </a>
+          <div class="top-actions">
+            <div class="monogram-badge" data-field="mark">SI</div>
+          </div>
+        </header>
+
+        <main class="main" id="main" tabindex="-1">
+          <section class="gate" id="gate">
+            <div class="gate-card">
+              <div class="wax wax-static" aria-hidden="true"><span data-field="monogram">S &amp; I</span></div>
+              <h1>Host registry</h1>
+              <p>Enter the private passcode to see who has confirmed and who is not participating.</p>
+              <form id="gate-form" class="stack" style="padding:0">
+                <label class="field">
+                  <span class="field-label" for="passcode">Passcode</span>
+                  <input class="input" id="passcode" type="password" autocomplete="current-password" placeholder="The sealed word" />
+                </label>
+                <p class="form-error" id="gate-error" role="alert" hidden></p>
+                <button class="btn btn-primary" type="submit">Unlock registry</button>
+              </form>
+            </div>
+          </section>
+
+          <section class="stack" id="registry" hidden>
+            <div class="registry-head">
+              <h1 class="registry-title">Guest registry</h1>
+              <button class="linkish" id="lock" type="button">Lock</button>
+            </div>
+            <div class="stats">
+              <div class="stat yes">
+                <span class="stat-num" id="count-yes">0</span>
+                <span class="stat-label">Confirmed</span>
+              </div>
+              <div class="stat no">
+                <span class="stat-num" id="count-no">0</span>
+                <span class="stat-label">Not coming</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num" id="count-seats">0</span>
+                <span class="stat-label">Seats</span>
+              </div>
+            </div>
+            <div class="toolbar">
+              <div class="filters" role="group" aria-label="Filter replies">
+                <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
+                <button class="filter" type="button" data-filter="yes" aria-pressed="false">Confirmed</button>
+                <button class="filter" type="button" data-filter="no" aria-pressed="false">Not participating</button>
+              </div>
+              <label class="input-wrap">
+                <span class="material-symbols-outlined">search</span>
+                <input class="input" id="search" type="search" placeholder="Search a name or a note" />
+              </label>
+              <button class="btn btn-quiet" id="export" type="button">
+                <span class="material-symbols-outlined">download</span>
+                Download CSV
+              </button>
+            </div>
+            <p class="mode-banner" id="mode-banner"></p>
+            <div id="guest-list"></div>
+          </section>
+        </main>
+
+        <nav class="tabbar" aria-label="Invitation">
+          <a href="index.html"><span class="material-symbols-outlined">mark_email_read</span>Invite</a>
+          <a href="rsvp.html"><span class="material-symbols-outlined">drafts</span>RSVP</a>
+          <a href="admin.html" aria-current="page"><span class="material-symbols-outlined">menu_book</span>Registry</a>
+        </nav>
+
+        <div class="modal" id="confirm-modal" hidden>
+          <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="confirm-title">
+            <h3 id="confirm-title">Remove this reply?</h3>
+            <p id="confirm-copy">This takes the guest off the registry.</p>
+            <div class="modal-actions">
+              <button class="btn btn-quiet" id="confirm-no" type="button">Keep</button>
+              <button class="btn btn-danger" id="confirm-yes" type="button">Remove</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/wedding.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/admin.js"></script>
+  </body>
+</html>

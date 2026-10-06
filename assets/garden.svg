@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="40 360 720 640" role="img" aria-label="A glass conservatory in a rose garden at dusk">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8e7cf"/>
+      <stop offset="0.45" stop-color="#f0d7b8"/>
+      <stop offset="1" stop-color="#d9c3a4"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f3ea"/>
+      <stop offset="1" stop-color="#d5e0d2"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8e9a84"/>
+      <stop offset="1" stop-color="#5e6b58"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#sky)"/>
+  <circle cx="630" cy="210" r="78" fill="#f0d59a" opacity="0.35"/>
+  <circle cx="630" cy="210" r="42" fill="#f3ddb0"/>
+  <path d="M0 690 C140 620 250 650 390 600 C540 546 650 610 800 560 L800 1000 L0 1000 Z" fill="#c5cbb8"/>
+  <path d="M0 760 C180 700 300 740 470 700 C640 660 700 720 800 690 L800 1000 L0 1000 Z" fill="url(#hill)"/>
+  <g fill="#3f4a3a">
+    <path d="M118 760 L148 560 L178 760 Z"/>
+    <path d="M150 780 L176 610 L202 780 Z"/>
+    <path d="M640 740 L668 560 L696 740 Z"/>
+    <path d="M676 770 L700 620 L724 770 Z"/>
+  </g>
+  <g fill="#6d7a64">
+    <ellipse cx="250" cy="700" rx="46" ry="28"/>
+    <ellipse cx="300" cy="688" rx="34" ry="22"/>
+    <ellipse cx="560" cy="676" rx="42" ry="24"/>
+    <ellipse cx="520" cy="690" rx="30" ry="18"/>
+  </g>
+  <g transform="translate(210 430)">
+    <path d="M40 250 H340 V150 H40 Z" fill="#f4efe6" stroke="#485443" stroke-width="3"/>
+    <path d="M20 150 H360 L190 28 Z" fill="url(#glass)" stroke="#485443" stroke-width="3"/>
+    <path d="M190 28 V250" stroke="#c5a059" stroke-width="2"/>
+    <path d="M70 150 L110 70" stroke="#c5a059" stroke-width="2"/>
+    <path d="M310 150 L270 70" stroke="#c5a059" stroke-width="2"/>
+    <path d="M20 150 H360" stroke="#485443" stroke-width="3"/>
+    <rect x="70" y="168" width="70" height="82" fill="#e7f0e4" stroke="#485443" stroke-width="2"/>
+    <rect x="250" y="168" width="70" height="82" fill="#e7f0e4" stroke="#485443" stroke-width="2"/>
+    <path d="M168 250 V176 Q190 158 212 176 V250 Z" fill="#6d5340" stroke="#485443" stroke-width="2"/>
+    <circle cx="204" cy="214" r="3" fill="#e6c98a"/>
+    <rect x="16" y="246" width="348" height="10" fill="#d9cfc2"/>
+  </g>
+  <g>
+    <ellipse cx="150" cy="860" rx="70" ry="22" fill="#4e5a48"/>
+    <ellipse cx="250" cy="890" rx="90" ry="26" fill="#425042"/>
+    <ellipse cx="620" cy="870" rx="80" ry="24" fill="#4e5a48"/>
+    <ellipse cx="500" cy="910" rx="70" ry="20" fill="#3d4a3c"/>
+  </g>
+  <g fill="#c4787a">
+    <circle cx="120" cy="820" r="7"/>
+    <circle cx="148" cy="836" r="5"/>
+    <circle cx="590" cy="830" r="6"/>
+    <circle cx="628" cy="846" r="5"/>
+    <circle cx="460" cy="900" r="5"/>
+  </g>
+  <g fill="#e7b4b0">
+    <circle cx="136" cy="812" r="4"/>
+    <circle cx="612" cy="838" r="4"/>
+    <circle cx="488" cy="892" r="4"/>
+  </g>
+  <path d="M330 1000 C360 930 390 900 400 820 C410 900 440 940 470 1000 Z" fill="#efe6d8" opacity="0.55"/>
+</svg>
