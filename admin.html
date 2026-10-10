@@ -19,10 +19,7 @@
       <div class="shell shell-wide">
         <header class="topbar">
           <a class="brand" href="index.html">
-            <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
-              <path d="M32 8c8 6 16 10 16 22 0 10-6 20-16 26C22 50 16 40 16 30 16 18 24 14 32 8z" fill="none" stroke="#485443" stroke-width="1.4"/>
-              <path d="M32 14c6 5 12 8 12 16 0 8-5 15-12 20-7-5-12-12-12-20 0-8 6-11 12-16z" fill="none" stroke="#c5a059" stroke-width="1"/>
-            </svg>
+            <img class="brand-mark" src="assets/rings.png" alt="" />
             <span class="brand-copy">
               <span class="brand-kicker" data-field="brand">Steeve &amp; Michelle</span>
               <span class="brand-title">Registry</span>
@@ -90,9 +87,27 @@
         </main>
 
         <nav class="tabbar" aria-label="Invitation">
-          <a href="index.html"><span class="material-symbols-outlined">mark_email_read</span>Invite</a>
-          <a href="rsvp.html"><span class="material-symbols-outlined">drafts</span>RSVP</a>
-          <a href="admin.html" aria-current="page"><span class="material-symbols-outlined">menu_book</span>Registry</a>
+          <a href="index.html">
+            <svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" d="M3.5 7.2h13.4v9.2H3.5z" />
+              <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M3.5 7.6 10.2 12.4 16.9 7.6" />
+              <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="m14.6 15.2 2 2 3.6-4" />
+            </svg>
+            <span>Invite</span>
+          </a>
+          <a href="rsvp.html">
+            <svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" d="M3.5 7h17v10.5h-17z" />
+              <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="m3.5 7.4 8.5 6 8.5-6" />
+            </svg>
+            <span>RSVP</span>
+          </a>
+          <a href="admin.html" aria-current="page">
+            <svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" d="M5 5.2h5.4A2.6 2.6 0 0 1 13 6.8v12.2a2.2 2.2 0 0 0-2.2-1.6H5zM19 5.2h-5.4A2.6 2.6 0 0 0 11 6.8v12.2a2.2 2.2 0 0 1 2.2-1.6H19z" />
+            </svg>
+            <span>Registry</span>
+          </a>
         </nav>
 
         <div class="modal" id="confirm-modal" hidden>

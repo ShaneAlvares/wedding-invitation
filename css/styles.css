@@ -49,12 +49,17 @@ a { color: inherit; }
   font-style: normal;
   font-size: 20px;
   line-height: 1;
-  letter-spacing: normal;
+  letter-spacing: 0;
   text-transform: none;
   display: inline-block;
   white-space: nowrap;
+  word-wrap: normal;
   direction: ltr;
-  font-feature-settings: "liga";
+  font-variant-ligatures: common-ligatures;
+  font-feature-settings: "liga" 1;
+  -webkit-font-feature-settings: "liga" 1;
+  text-rendering: optimizeLegibility;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -108,9 +113,10 @@ a { color: inherit; }
 }
 
 .brand-mark {
-  width: 34px;
-  height: 34px;
+  width: 58px;
+  height: auto;
   flex: none;
+  display: block;
 }
 
 .brand-copy { min-width: 0; }
@@ -252,8 +258,7 @@ a { color: inherit; }
   text-align: center;
 }
 
-.crest { width: 74px; height: 74px; margin: 0 auto 8px; }
-.crest text { font-family: var(--serif); }
+.crest { width: 86px; height: auto; margin: 0 auto 8px; display: block; }
 
 .kicker {
   display: block;
@@ -292,9 +297,9 @@ a { color: inherit; }
 }
 
 .names {
-  margin: 10px 0;
+  margin: 16px 0;
   font-family: var(--serif);
-  font-weight: 400;
+  font-weight: 600;
   font-size: 31px;
   line-height: 1.05;
   letter-spacing: -0.02em;
@@ -776,8 +781,12 @@ a { color: inherit; }
 }
 
 .tabbar a[aria-current="page"] { color: var(--sage); }
-.tabbar a[aria-current="page"] .material-symbols-outlined {
-  font-variation-settings: "FILL" 1, "wght" 500;
+
+.tab-icon {
+  width: 22px;
+  height: 22px;
+  display: block;
+  flex: none;
 }
 
 .progress-row { color: var(--muted); font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
@@ -1283,14 +1292,14 @@ html.opened .envelope { display: none; }
   left: 50%;
   top: 48%;
   z-index: 5;
-  width: 118px;
+  width: 148px;
   height: 88px;
   padding: 0;
   border: 0;
   background: transparent;
   cursor: pointer;
   transform: translate(-50%, -50%) rotate(-7deg);
-  filter: drop-shadow(0 8px 6px rgba(90, 24, 28, 0.28));
+  filter: drop-shadow(0 8px 8px rgba(36, 34, 32, 0.18));
   transition: transform 0.25s ease, opacity 0.4s ease;
 }
 .seal-btn:hover { transform: translate(-50%, -56%) rotate(-7deg) scale(1.04); }
@@ -1305,7 +1314,7 @@ html.opened .envelope { display: none; }
   pointer-events: none;
   transform: translate(-50%, -88%) rotate(-16deg) scale(0.84);
 }
-.wax-heart { display: block; width: 100%; height: 100%; overflow: visible; }
+.wax-heart { display: block; width: 100%; height: 100%; object-fit: contain; }
 .wax-mark {
   font-family: var(--serif);
   font-size: 15px;

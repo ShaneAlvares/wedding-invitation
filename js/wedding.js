@@ -43,7 +43,7 @@ const WEDDING = {
   attention: "Kind Attention Requested",
   confirmTitle: "Kindly Confirm Your Attendance",
   sealTitle: "Break the seal to reveal the order of events",
-  sealCopy: "Tap the hearts to unveil the ceremony and lunch.",
+  sealCopy: "Tap the rings to unveil the ceremony and lunch.",
   honorKicker: "The Honor of Your Presence",
   honorPoem:
     "At Grandeeza, we will say our vows. Your presence is the truest gift to our marriage.",
