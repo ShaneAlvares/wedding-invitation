@@ -53,7 +53,18 @@ function bindNotice() {
 function guestFromUrl() {
   let raw = "";
   try {
-    raw = new URLSearchParams(location.search).get("guest") || "";
+    const search = location.search.charAt(0) === "?" ? location.search.slice(1) : location.search;
+    const start = search.toLowerCase().indexOf("guest=");
+    if (start !== -1) {
+      raw = search.slice(start + "guest=".length);
+      const cut = raw.search(/&open=/i);
+      if (cut !== -1) raw = raw.slice(0, cut);
+      try {
+        raw = decodeURIComponent(raw.replace(/\+/g, " "));
+      } catch (error) {
+        raw = raw.replace(/\+/g, " ");
+      }
+    }
   } catch (error) {
     raw = "";
   }
