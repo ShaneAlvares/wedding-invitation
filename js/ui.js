@@ -50,5 +50,39 @@ function bindNotice() {
   });
 }
 
+function guestFromUrl() {
+  let raw = "";
+  try {
+    raw = new URLSearchParams(location.search).get("guest") || "";
+  } catch (error) {
+    raw = "";
+  }
+  return raw.replace(/[\u0000<>]/g, "").replace(/\s+/g, " ").trim().slice(0, 80);
+}
+
+function applyGuest() {
+  const name = guestFromUrl();
+  const label = name || "MR/ MRS/ MISS ........";
+  document.querySelectorAll("[data-guest]").forEach((node) => {
+    node.hidden = false;
+    node.textContent = label;
+  });
+
+  const input = document.getElementById("guest-name");
+  if (input && name && !input.value) input.value = name;
+
+  if (!name) return;
+  document.querySelectorAll("a[href]").forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!href || href.charAt(0) === "#" || /^https?:/i.test(href) || href.indexOf("mailto:") === 0) return;
+    if (!/\.html(?:$|\?)/.test(href)) return;
+    const url = new URL(href, location.href);
+    url.searchParams.set("guest", name);
+    const file = url.pathname.split("/").pop() || href;
+    link.setAttribute("href", file + url.search);
+  });
+}
+
 applyWedding();
+applyGuest();
 bindNotice();

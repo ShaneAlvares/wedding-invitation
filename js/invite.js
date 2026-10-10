@@ -88,7 +88,7 @@ function bindCalendar() {
     const lines = [
       "BEGIN:VCALENDAR",
       "VERSION:2.0",
-      "PRODID:-//Steeve and Name//Wedding//EN",
+      "PRODID:-//Steeve and Michelle//Wedding//EN",
       "BEGIN:VEVENT",
       "UID:wedding-" + WEDDING.dateISO.replace(/[^\d]/g, "") + "@invitation",
       "DTSTAMP:" + stamp,
@@ -103,7 +103,7 @@ function bindCalendar() {
     const url = URL.createObjectURL(file);
     const link = document.createElement("a");
     link.href = url;
-    link.download = "steeve-and-isabelle.ics";
+    link.download = "steeve-and-michelle.ics";
     document.body.append(link);
     link.click();
     link.remove();

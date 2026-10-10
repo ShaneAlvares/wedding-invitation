@@ -271,16 +271,31 @@ a { color: inherit; }
 
 .lead, .close {
   margin: 0 auto;
-  max-width: 28ch;
+  max-width: 34ch;
   font-size: 14px;
   line-height: 1.6;
+}
+
+.guest-line {
+  margin: 0 0 8px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--sage);
+}
+
+.mail .guest-line {
+  margin: 8px 0 0;
+  text-align: center;
+  color: var(--ink);
 }
 
 .names {
   margin: 10px 0;
   font-family: var(--serif);
   font-weight: 400;
-  font-size: 40px;
+  font-size: 31px;
   line-height: 1.05;
   letter-spacing: -0.02em;
   color: var(--sage);
@@ -311,7 +326,7 @@ a { color: inherit; }
 .family-name {
   margin: 0;
   font-family: var(--serif);
-  font-size: 22px;
+  font-size: 17px;
   font-weight: 500;
   letter-spacing: -0.02em;
   color: var(--sage);
@@ -327,11 +342,19 @@ a { color: inherit; }
 
 .kin {
   margin: 6px 0 0;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   font-style: italic;
   line-height: 1.45;
   color: var(--muted);
+}
+
+.parent {
+  margin: 2px 0 0;
+  font-family: var(--serif);
+  font-size: 13px;
+  line-height: 1.35;
+  color: var(--ink);
 }
 
 .medallion {
@@ -379,7 +402,9 @@ a { color: inherit; }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(32, 30, 27, 0.62), rgba(32, 30, 27, 0.02) 52%);
+  background:
+  linear-gradient(to top, rgba(32, 44, 28, 0.2), rgba(58, 74, 50, 0.2) 64%),
+  rgba(63, 82, 54, 0.4);
   pointer-events: none;
 }
 
@@ -657,6 +682,7 @@ a { color: inherit; }
 .venue-body { padding: 14px 14px 16px; }
 .venue-copy h3 { margin: 0; font-family: var(--serif); font-size: 18px; color: var(--sage); }
 .venue-copy p { margin: 2px 0 0; font-size: 13px; }
+.venue-copy p:empty { display: none; }
 
 .icon-round {
   width: 40px;
@@ -1179,8 +1205,9 @@ html.opened .envelope { display: none; }
 .env-letter-names {
   margin: 8px 0 0;
   font-family: var(--serif);
-  font-size: 22px;
+  font-size: 16px;
   line-height: 1.15;
+  text-align: center;
   color: var(--sage);
 }
 .env-letter-names em,
@@ -1207,8 +1234,9 @@ html.opened .envelope { display: none; }
 .env-when { position: relative; margin: 0; }
 .env-who {
   font-family: var(--serif);
-  font-size: 22px;
-  line-height: 1.1;
+  font-size: 16px;
+  line-height: 1.15;
+  text-align: center;
   color: var(--sage);
 }
 .env-when {
@@ -1255,8 +1283,8 @@ html.opened .envelope { display: none; }
   left: 50%;
   top: 48%;
   z-index: 5;
-  width: 86px;
-  height: 80px;
+  width: 118px;
+  height: 88px;
   padding: 0;
   border: 0;
   background: transparent;
