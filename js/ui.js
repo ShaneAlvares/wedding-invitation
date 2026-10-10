@@ -5,8 +5,8 @@ function applyWedding() {
   });
 
   const page = document.body.dataset.page || "invite";
-  const pageNames = { invite: "Invitation", rsvp: "RSVP", admin: "Registry" };
-  document.title = WEDDING.personOne + " & " + WEDDING.personTwo + " — " + (pageNames[page] || "Invitation");
+  const pageNames = { invite: "Details", card: "Invitation", rsvp: "RSVP", admin: "Registry" };
+  document.title = WEDDING.personOne + " & " + WEDDING.personTwo + " — " + (pageNames[page] || "Details");
 
   const description = document.querySelector('meta[name="description"]');
   if (description) description.setAttribute("content", WEDDING.description);
