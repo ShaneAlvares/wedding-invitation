@@ -408,8 +408,8 @@ a { color: inherit; }
   position: absolute;
   inset: 0;
   background:
-  linear-gradient(to top, rgba(32, 44, 28, 0.2), rgba(58, 74, 50, 0.2) 64%),
-  rgba(63, 82, 54, 0.4);
+  linear-gradient(to top, rgba(32, 44, 28, 0.1), rgba(58, 74, 50, 0.1) 64%),
+  rgba(63, 82, 54, 0.1);
   pointer-events: none;
 }
 
